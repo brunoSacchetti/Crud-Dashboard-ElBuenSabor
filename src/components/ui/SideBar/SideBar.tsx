@@ -5,7 +5,7 @@ import styles from './SideBar.module.css'
 
 export const SideBar = () => {
   return (
-    <CSidebar className={styles.SideBarBig}>
+    <CSidebar className={styles.SideBarBig} style={{background:'#efefef'}}>
       <CSidebarNav>
         <CNavTitle>Dashboard</CNavTitle>
         <CNavItem href="/">
@@ -20,9 +20,9 @@ export const SideBar = () => {
         </CNavItem>
         <CNavItem href="/promociones">
           <CIcon customClassName="nav-icon" icon={cilCloudDownload} /> Promociones
-          <CBadge color="primary ms-auto">NEW</CBadge>
+          <CBadge color=" ms-auto" style={{background:'#f09e2f'}}>NEW</CBadge>
         </CNavItem>
-        <CNavItem href="/">
+        <CNavItem href="/usuarios">
           <CIcon customClassName="nav-icon" icon={cilCloudDownload} /> Usuarios
         </CNavItem>
         <CNavGroup
@@ -45,7 +45,7 @@ export const SideBar = () => {
             Subcategoria 2
           </CNavItem>
         </CNavGroup>
-        <CNavItem href="/">
+        <CNavItem href="/insumos">
           <CIcon customClassName="nav-icon" icon={cilLayers} /> Insumos
         </CNavItem>
       </CSidebarNav>

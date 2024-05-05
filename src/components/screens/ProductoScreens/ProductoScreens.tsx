@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import IArticuloManufacturado from "../../../types/ArticuloManufacturado";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { ArticuloManufacturadoService } from "../../../services/ArticuloManufacturadoService";
-import { openModal,closeModal } from "../../../redux/slices/modalSlice";
+import { openModal } from "../../../redux/slices/modalSlice";
 import "./ProductoScreens.module.css"
 import { SearchBar } from "../../ui/SearchBar/SearchBar";
 

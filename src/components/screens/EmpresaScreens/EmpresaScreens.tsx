@@ -32,7 +32,7 @@ export const EmpresaScreens: React.FC = () => {
             <div key={index} style={{ margin: "20px" }}>
               <h2>{empresa.nombre}</h2>
               <h3>Sucursales</h3>
-              <div>
+              <div style={{display:'flex', flexWrap:'wrap',gap:'3rem'}}>
                 {empresa.sucursales &&
                   empresa.sucursales.map((sucursal, sucursalIndex) => (
                     <CardC
